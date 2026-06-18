@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revised Project — Liam Heary</title>
+  <meta name="description" content="Investigative Essay: Cryogenic vs. NV-Diamond quantum computing." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap-wide header-row">
+      <a href="index.html" class="wordmark" aria-label="Liam Heary, home">
+        <span class="wordmark-badge">LH</span>
+        <span class="wordmark-name">Liam Heary</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="project.html" class="is-active" aria-current="page">Revised Project</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="reflection.html">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="hero-inner">
+      <div class="wrap">
+        <p class="eyebrow">Project 3 · Section 01</p>
+        <h1>Cryogenic vs. NV-Diamond: Which Design Carries Quantum Computing into the Future?</h1>
+        <p class="hero-lede">
+          An investigative essay comparing the two leading quantum computing hardware approaches on four benchmarks: coherence time, scalability, error correction, and cost.
+        </p>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="wrap">
+        <div class="prose">
+
+          <h2>Introduction</h2>
+
+          <p>Every computer ever made to this day runs on something called a bit (or byte), a tiny "bit" of information that literally "builds" computers. A bit is just a tiny switch that is either on or off, a 1 or a 0. A few bits combined like 0, 1, 1, 1 make a string 0111 which equals 7 to a computer "brain". Stringing billions of bits together is how a phone loads images or a laptop runs a game. But a bit is not a physical thing. It is a state, held in place by a transistor or a pulse of electricity inside a chip. Chips in technology are essentially built with millions of transistors which equate to a ton of possible 0 and 1 combinations.</p>
+
+          <p>Quantum computers are the first computers to use a different type of bit; they are built with Qubits. Instead of an electrical switch called a transistor, they use atoms and the rules of quantum physics to build a new kind of bit. Picture an atom suspended in space. An example is an electron. Nature makes it so this electron is constantly spinning up and spinning down with certain probabilities from its environment. In this case our electron is a Qubit that can point up or down, where up is a 1 and down is a 0. So overall quantum computers are still using 0s and 1s for computing, just with atoms representing the bits. The difference is that the atom can sit in both directions at once, until it is measured and turned into a 0 or 1. This allows for a single Qubit to hold a mix of probabilities rather than a fixed answer. That property is what lets a quantum machine weigh many possible answers at the same time, instead of checking them one by one.</p>
+
+          <p>The inception of quantum computing in 1980 started with world-shattering algorithms, using quantum physics and solid math to theorize faster and stronger algorithms. In the early stages lots of physicists and experts dismissed these as impossible pipe dreams. Today, labs are proving these massive computational speedups are real, moving from theory to physical hardware. For a deep dive on the implications of quantum computing, I highly recommend <em>Quantum Supremacy</em> by Michio Kaku.</p>
+
+          <p>Companies already run real quantum chips, yet most computers only hold 10-200 Qubits (Ivezic, 2023). So, the question worth digging into is: <strong>which design will carry quantum computing into the future?</strong></p>
+
+          <h2>The Comparison</h2>
+
+          <p>So, if a Qubit only holds its mix of probabilities until something measures it, the whole game becomes protecting that atom from getting disturbed too soon from a certain "state" (probability state). And the biggest troublemaker is heat. Heat normally means more movement for atoms, tiny particles jostling everything around them, and that jostling is enough to knock a Qubit out of its delicate state before it can finish any useful work. The major hurdle of quantum computers is isolating these atoms so other atoms do not interfere with them.</p>
+
+          <p>Two modalities have emerged as the top types of quantum computers. The first, used by giants like IBM and Google, takes the brute force route. If heat ruins Qubits, then freeze it out. These machines chill their chips down colder than outer space, so cold that the jostling nearly stops. This is the <strong>Cryogenic</strong> method. The second method, <strong>NV-Diamond</strong>, uses a clever material instead of a freezer. They use diamond, where a natural flaw (created in a lab, called Nitrogen Vacancy) in the crystal traps a Qubit and holds it steady at room temperature, no cooling required.</p>
+
+          <p>One side spends a fortune fighting heat. The other claims it barely has to fight at all. So which approach is actually winning in 2026, and which has the best outlook for the future?</p>
+
+          <h2>How We Will Judge It</h2>
+
+          <p>To answer that fairly, we cannot just root for one side. We need a scorecard to compare these two methods head to head: Cryogenic vs. Room Temperature NV-Diamond.</p>
+
+          <p>I am putting both modalities through four detailed comparisons, each one in a category that determines how useful a quantum computer is:</p>
+
+          <ol>
+            <li><strong>Coherence time:</strong> how long a Qubit survives in its probability state before it falls apart.</li>
+            <li><strong>Scalability:</strong> how many Qubits you can string together and still control disruptions, since one Qubit alone does nothing.</li>
+            <li><strong>Error correction:</strong> Qubits constantly make mistakes, so can the system catch and fix them fast enough to trust the answer?</li>
+            <li><strong>Cost and infrastructure:</strong> what it actually takes to build one of these machines and keep it running.</li>
+          </ol>
+
+          <p>Each test gets a winner (Cryo vs. Room Temp) and will receive a score 1-5 to contribute to a final tally. Here is the catch that makes this worth it: no source I found puts cryogenic and NV-Diamond head-to-head across all four categories. So that is exactly what this paper does.</p>
+
+          <h2>The Research Results</h2>
+
+          <h3>Test 1: Coherence Time</h3>
+
+          <p>The most basic question you can ask a Qubit is, how long can it hold before it falls apart. For the Cryo method, the answer used to be not promising. Superconducting Qubits held their state for mere millionths of a second, though twenty years of work has stretched that window enormously (Kjaergaard et al., 2020), with the newest records now past a full millisecond (Ivezic, 2023). The diamond approach does better on paper, holding its state longer and doing it at room temperature with no cooling at all (Pezzagna &amp; Meijer, 2021).</p>
+
+          <p>I expected the freezing route to win this one outright. It does not. Based on the research I score this round a Tie, 3 to 3. But there is a catch worth noting, and Ivezic (2023) puts it in a single line: "superconducting Qubits operate in nanoseconds but decohere in microseconds." In plain terms, the cold Qubits die fast, yet they also work fast, firing operations quickly enough to get work done inside that tiny window. That is why it is a tie: cryogenic methods offer more speed but are currently harder to bring into coherence.</p>
+
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Cryo Score</th>
+                <th>NV Score</th>
+                <th>Running Tally</th>
+                <th>Core Takeaway</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Coherence Time</td>
+                <td class="score">3</td>
+                <td class="score">3</td>
+                <td class="tally">3 : 3</td>
+                <td>Cryo qubits operate faster but die quicker; NV holds states longer at room temp.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Test 2: Scalability</h3>
+
+          <p>One Qubit is just a 0 or 1 after it is measured. A useful machine needs hundreds, then thousands, all wired together and still behaving without disruption. This is where the Cryogenic build flexes. Google's Willow chip runs 105 Qubits, IBM's Heron runs 156, and IBM has publicly committed to 200 error-corrected Qubits by 2029, with rivals chasing ten thousand within a few years (Ivezic, 2023; IBM Quantum, 2025). The NV-Diamond side has nothing close. It is stuck with tiny clusters of a few Qubits per stone, and the plan is to link many small nodes together rather than build one large chip (Pezzagna &amp; Meijer, 2021).</p>
+
+          <p>Why is diamond stuck? Its own leading review is blunt about it, admitting a working NV computer "remains elusive due to technical reasons and limitations of the available materials" (Pezzagna &amp; Meijer, 2021). You cannot yet place each Qubit exactly where it needs to go, because the NV diamonds are made carefully in a lab. This one is a blowout. Cryo 5, NV 2.</p>
+
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Cryo Score</th>
+                <th>NV Score</th>
+                <th>Running Tally</th>
+                <th>Core Takeaway</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Scalability</td>
+                <td class="score">5</td>
+                <td class="score">2</td>
+                <td class="tally">8 : 5</td>
+                <td>IBM and Google scaling 100+ qubits with cryo. NV remains structurally restricted to small clusters.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Test 3: Error Correction</h3>
+
+          <p>Qubits make mistakes constantly, so the trick is to bundle many unreliable ones into a single trustworthy Qubit. This means quantum computers require "error correcting Qubits" to suppress errors. This is the problem the entire industry is leaning on right now, with giants like IBM, Google, and Microsoft all fighting the same noise errors and more than five billion dollars poured into the chase (Brooks, 2024). One way to picture the fix is that it works a little like noise-canceling headphones, drowning the errors out (Brooks, 2024).</p>
+
+          <p>Here the Cryo modality is simply ahead. In 2025 IBM walked away from the error-correction scheme it had relied on for years, because it devoured too many spare Qubits, and switched to a leaner design that discovered the more Qubits you add, the error rates get lower. New designs now need roughly 10% as many error-correcting Qubits (IBM Quantum, 2025). Diamond is not as advanced in error correction, which is why the largest NV computer so far is roughly under 20 Qubits, while Cryo methods have had over 100 Qubits on some chips. Cryo takes it, 4 to 3.</p>
+
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Cryo Score</th>
+                <th>NV Score</th>
+                <th>Running Tally</th>
+                <th>Core Takeaway</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Error Correction</td>
+                <td class="score">4</td>
+                <td class="score">3</td>
+                <td class="tally">12 : 8</td>
+                <td>Cryo platforms feature advanced error-suppression math; NV tracking under 20 qubits.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Test 4: Cost and Infrastructure</h3>
+
+          <p>A quantum computer is more than the atoms on a chip. You also have to build a whole system around it to keep it alive. For the cryo methods, that overhead is enormous. Superconducting processors must sit at ten to twenty thousandths of a degree above absolute zero, colder than deep space, inside refrigerators the size of furniture (Ivezic, 2023). That cold is not a luxury you can trim, since the physics of these Qubits demands it (Krantz et al., 2019), and the refrigerators themselves run on helium-3, a genuinely scarce resource (Ivezic, 2023).</p>
+
+          <p>This is the test diamond was born to win. The whole reason the approach exists is captured in one line from its leading review, which describes the NV center as a route to "fully functional Qubits in a solid at room temperature" (Pezzagna &amp; Meijer, 2021). NV promises significantly less money spent fighting heat. It also means a diamond machine could one day shrink down and run in ordinary places a giant refrigerator could never follow. NV crushes this one, 4 to 1.</p>
+
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Cryo Score</th>
+                <th>NV Score</th>
+                <th>Running Tally</th>
+                <th>Core Takeaway</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cost &amp; Infrastructure</td>
+                <td class="score">1</td>
+                <td class="score">4</td>
+                <td class="tally">13 : 12</td>
+                <td>NV completely bypasses millions spent on furniture-sized extreme dilution refrigerators.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Conclusion</h2>
+
+          <p>After four rounds of head-to-head testing, the final tally lands at <strong>Cryogenic 13, NV-Diamond 12.</strong> That looks like a near tie on paper, which surprised me. Cryogenic should have run away with it. It has a decade-plus head start, billions in funding, and entire engineering departments at IBM, Google, and Microsoft refining it (Brooks, 2024). NV-Diamond has a fraction of that funding and a much shorter research history, yet it held its own in coherence and won the cost category outright.</p>
+
+          <p>Cryogenic is the proven workhorse, ahead on scalability and error correction, and currently the only path delivering 100+ Qubit machines that real researchers can run experiments on (IBM Quantum, 2025). NV-Diamond is the long-shot challenger with a structural advantage that no amount of cryogenic engineering can erase: it does not need a refrigerator colder than outer space to work (Pezzagna &amp; Meijer, 2021).</p>
+
+          <p>There are caveats worth naming before declaring anything. First, my scoring is built on the categories I chose, and a different rubric weighing portability or networking ability would tilt the result further toward NV. Second, scoring Qubit counts and coherence times against each other has limits, since a cryogenic Qubit doing operations in nanoseconds is not directly comparable to an NV Qubit doing them slower but for longer (Ivezic, 2023). Third, and most importantly, the funding gap is doing a lot of hidden work in these results. If NV-Diamond received even a fraction of the capital cryogenic has absorbed over the last twenty years, this paper could be a lot different. Cryogenic has roughly 20-40x more money poured into it than room-temp approaches, and about a 10-15 year head start as a serious experimental program.</p>
+
+          <p>My honest takeaway is that there is no clear winner yet and probably will not be for another few decades. Cryogenic is winning the present. NV-Diamond is positioned for a future where quantum computers need to leave the laboratory. The question I started with was which design carries quantum computing into the future, and after running the tests the answer is that cryogenic carries the next ten years due to existing architecture, but NV-Diamond is the one to watch.</p>
+
+        </div>
+
+        <div class="revisions-note">
+          <h3>Revisions made</h3>
+          <p>The global revision focused on clarity for a non-specialist reader. The introduction was restructured to build from classical bits to Qubits step by step before introducing either hardware approach, rather than jumping straight into the comparison. The section headers were made more active and the conclusion was tightened to land the "no clear winner yet" argument more directly, cutting two paragraphs of hedging that softened the point without adding anything.</p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <a class="btn-pdf" href="docs/investigative-essay.pdf" target="_blank" rel="noopener" aria-label="Download original essay as PDF">Download Original PDF</a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-row">
+      <p>© 2026 Liam Heary · Florida State University · ENC 2135</p>
+      <p><a href="mailto:wjh26a@fsu.edu">wjh26a@fsu.edu</a></p>
+    </div>
+  </footer>
+</body>
+</html>
